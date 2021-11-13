@@ -13,6 +13,57 @@ html, body {
 }
 
 /* Phone first */
+.first-div {
+    padding: 80px 0;
+    background-image: url("bg-pattern-intro.svg");
+    background-image: url("bg-pattern-intro.svg"), linear-gradient(hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    border-bottom-left-radius: 75px;
+}
+/* Navbar */
+.navbar {
+    display: none;
+}
+/* Content */
+.title, .description {
+    text-align: center;
+    color: white;
+    padding: 10px 15px;
+}
+.title {
+    font-family: 'Overpass', sans-serif;
+    font-size: 38px;
+    padding-top: 100px;
+}
+.description {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    padding-bottom: 45px;
+}
+
+/* Button */
+.buttons {
+    text-align: center;
+}
+.button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    padding: 10px 20px;
+    outline: none;
+    color: white;
+    border: 1.5px solid white;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.button:hover {
+    color: hsl(353, 100%, 62%);
+    background-color: white;
+}
+
 /* Footer */
 footer {
     background-color: hsl(240, 10%, 16%);
@@ -42,6 +93,9 @@ footer {
 
 .details {
     color: hsl(240, 2%, 79%);
+}
+.details li:hover {
+    text-decoration: underline;
 }
 .over, .price, .market, .features, .integ, .about, .team, .blog, .career, .contact, .news, .linked {
     padding-bottom: 10px;
