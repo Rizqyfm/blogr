@@ -10,23 +10,47 @@
 
 html, body {
     width: 100%;
+    background-color: whitesmoke;
 }
 
 /* Phone first */
 .first-div {
-    padding: 80px 0;
+    padding: 50px 0 120px;
     background-image: url("bg-pattern-intro.svg");
     background-image: url("bg-pattern-intro.svg"), linear-gradient(hsl(353, 100%, 62%), hsl(13, 100%, 72%));
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     border-bottom-left-radius: 75px;
 }
 /* Navbar */
 .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.hamburger {
+    background: transparent;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    padding-right: 30px;
+}
+.hamburger:focus {
+    outline: none;
+}
+.homelogo {
+    height: 40px;
+    padding-left: 30px;
+}
+.nav-ul {
     display: none;
 }
-/* Content */
+.nav-ul.show{
+    display: block;
+}
+
+/* First div */
 .title, .description {
     text-align: center;
     color: white;
@@ -62,6 +86,68 @@ html, body {
 .button:hover {
     color: hsl(353, 100%, 62%);
     background-color: white;
+}
+
+/* Second div */
+.values {
+    display: flex;
+    flex-direction: column;
+    margin: 60px auto;
+}
+
+.tagline {
+    font-family: 'Overpass', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 20px;
+    color: hsl(208, 49%, 24%);
+}
+.above {
+    padding-bottom: 40px;
+}
+
+.hero1 {
+    display: flex;
+    flex-direction: column;
+}
+.explanation {
+    font-family: 'Ubuntu', sans-serif;
+    color: hsl(207, 13%, 34%);
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 30px;
+    line-height: 30px;
+}
+.bottom {
+    padding-bottom: 100px;
+}
+
+.hero2 {
+    display: flex;
+    flex-direction: column;
+    background-image: url("bg-pattern-circles.svg");
+    background-image: url("bg-pattern-circles.svg"), linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
+    border-radius: 0 75px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.phonemocks {
+    margin-top: -150px;
+}
+.taglinebig {
+    font-family: 'Overpass', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+.state {
+    color: white;
+    padding: 0 30px 100px;
 }
 
 /* Footer */
@@ -112,4 +198,11 @@ footer {
 .watermark a {
     color: hsl(240, 2%, 79%);
     text-decoration: none;
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+    body {
+        display: none;
+    }
 }
