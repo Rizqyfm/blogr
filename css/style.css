@@ -4,8 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 16px;
-    /* font-family: 'Ubuntu', sans-serif; */
-    /* font-family: 'Overpass', sans-serif; */
+    font-family: "Overpass"
 }
 
 html, body {
@@ -50,6 +49,12 @@ html, body {
 .nav-ul.show{
     display: flex;
 }
+.dropdown {
+    display: none;
+}
+.nav-button {
+    display: none;
+}
 
 /* First div */
 .title, .description {
@@ -87,6 +92,14 @@ html, body {
 .button:hover {
     color: hsl(353, 100%, 62%);
     background-color: white;
+}
+.CTA-signup {
+    background-color: white;
+    color: hsl(353, 100%, 62%);
+}
+.CTA-signup:hover {
+    color: white;
+    background-color: hsl(13, 100%, 72%);
 }
 
 /* Second div */
@@ -229,7 +242,9 @@ html, body {
     }
     
     .navbar {
-        justify-content: flex-start;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
     .nav-ul {
         display: flex;
@@ -242,6 +257,84 @@ html, body {
         font-family: 'Overpass', sans-serif;
         font-weight: 600;
     }
+    .dropbtn {
+        background-color: transparent;
+        color: white;
+        font-weight: 600;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropbtn:hover, .dropbtn:focus {
+        text-decoration: underline;
+      }
+
+      .arrow-button {
+          margin-left: 5px;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        border-radius: 5px;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+        font-family: "Overpass"
+      }
+      
+      .dropdown a:hover {
+          font-weight: bold;
+        }
+      
+      .show {display: block;}
+    
+      .nav-button {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          gap: 40px;
+      }
+      .nav-cta {
+          font-size: 16px;
+          color: white;
+          padding: 10px 40px;
+          background-color: transparent;
+          border: none;
+          font-weight: 600;
+          text-align: center;
+          outline: none;
+          cursor: pointer;
+          border-radius: 50px;
+      }
+      .nav-cta:hover {
+        background-color: hsl(13, 100%, 72%);
+      }
+
+      .nav-sign {
+          color: hsl(353, 100%, 62%);
+          background-color: white;
+      }
+      .nav-sign:hover {
+        color: white;
+        background-color: hsl(13, 100%, 72%);
+      }
 
     /* First div */
     .title {

@@ -19,41 +19,60 @@
 
 <body>
     <main>
+      <!-- Navbar -->
     <div class="first-div">
       <div class="navbar">
         <img src="images/logo.svg" alt="Blogr" class="homelogo">
         <button class="hamburger" id="hamburger">
           <i class="fas fa-bars"></i>
         </button>
-          <ul class="nav-ul" id="nav-ul">
-            <li>Product</li>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Product
+            <img src="images/icon-arrow-light.svg" alt="arrow" class="arrow-button">
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Overview</a>
+            <a href="#">Pricing</a>
+            <a href="#">Marketplace</a>
+            <a href="#">Features</a>
+            <a href="#">Integration</a>
+          </div>
+        </div>
 
-          <!-- Overview
-          Pricing
-          Marketplace
-          Features
-          Integrations -->
+        <div class="dropdown">
+          <button onclick="myFunction2()" class="dropbtn">Company
+            <img src="images/icon-arrow-light.svg" alt="arrow" class="arrow-button">
+          </button>
+          <div id="myDropdown2" class="dropdown-content">
+            <a href="#">About</a>
+            <a href="#">Team</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+          </div>
+        </div>
 
-          <li>Company</li>
+        <div class="dropdown">
+          <button onclick="myFunction3()" class="dropbtn">Connect
+            <img src="images/icon-arrow-light.svg" alt="arrow" class="arrow-button">
+          </button>
+          <div id="myDropdown3" class="dropdown-content">
+            <a href="#">Contact</a>
+            <a href="#">Newsletter</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
 
-          <!-- About
-          Team
-          Blog
-          Careers -->
-
-          <li>Connect</li>
-
-          <!-- Contact
-          Newsletter
-          LinkedIn -->
-          </ul>
-          
-          
-          <!-- Login
-          Sign Up -->
+        <div class="nav-button">
+          <button class="nav-cta">Login</button>
+          <button class="nav-cta nav-sign">Sign up</button>
+        </div>
       </div>
-      <h1 class="title">A modern publishing platform</h1>
-      <p class="description">Grow your audience and build your online brand </p>
+
+      <!-- Main -->
+      <div class="display">
+        <h1 class="title">A modern publishing platform</h1>
+        <p class="description">Grow your audience and build your online brand </p>
+      </div>
       <div class="buttons">
         <button type="button" class="button CTA-signup">Start for Free</button> 
         <button type="button" class="button CTA-learn">Learn More</button>
@@ -147,6 +166,6 @@
   <p class="watermark">Made with ❤ by <a href="https://rizqyfm.netlify.app/" target="_blank">RFM</a></p> -->
 </footer>
 
-
+<script src="js/main.js"></script>
 </body>
 </html>
